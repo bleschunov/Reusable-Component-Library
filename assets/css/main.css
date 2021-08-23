@@ -1,3 +1,4 @@
+@import './reset.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -13,6 +14,8 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
+
 
     --error: var(--red);
     --success: var(--blue-1);
@@ -24,6 +27,6 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', 'Roboto', sans-serif;
     box-sizing: border-box;
 }
