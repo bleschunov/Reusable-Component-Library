@@ -1,0 +1,52 @@
+/* Стилизация скелетона */
+.skeleton {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.skeleton__flexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.skeleton__avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: var(--grey-2);
+  margin-right: 16px;
+  flex-shrink: 0; /* Аватар не будет сжиматься */
+}
+
+.skeleton__bar {
+  background: linear-gradient(
+    92.51deg,
+    #DDE2E5 6.44%,
+    #E2E6E8 38.47%,
+    #F3F5F5 56.48%,
+    #E3E7EA 77.5%,
+    #DDE2E5 102.52%
+  );
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.skeleton__bar_width-s {
+  width: 30%;
+}
+
+.skeleton__bar_width-m {
+  width: 50%;
+}
+
+.skeleton__bar_width-l {
+  width: 80%;
+}
+
+.skeleton__bar_width-xl {
+  width: 100%;
+}

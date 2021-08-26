@@ -1,5 +1,11 @@
 @import './reset.css';
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/main_section/main_section.css';
+@import '../../components/footer/footer.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;

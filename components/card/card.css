@@ -1,0 +1,14 @@
+/* Стилизация карточки */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card__title {
+  margin-bottom: 6px;
+}

@@ -1,6 +1,24 @@
 /* Стилизация главной страницы */
+.main__preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 64px 0 204px;
+}
+
+.main__card {
+  height: 367px;
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.main__histogram_preview {
+  margin-bottom: 67px;
+}
+
 .page__box {
-  max-width: 1120px;
+  max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
