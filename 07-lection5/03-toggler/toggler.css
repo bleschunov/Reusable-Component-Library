@@ -1,0 +1,60 @@
+.toggler {
+  cursor: pointer;
+}
+
+.toggler__backend {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  outline: none;
+}
+
+.toggler__visible {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggler__frontend {
+  display: grid;
+  place-items: center left;
+  padding: 0 2px;
+  width: 52px;
+  height: 28px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 16px;
+}
+
+.toggler__frontend:before {
+  content: '';
+  display: block;
+  background-color: var(--grey-2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.toggler__backend:disabled + .toggler__visible .toggler__frontend {
+  background-color: var(--grey-2);
+}
+
+.toggler__backend:disabled + .toggler__visible .toggler__frontend:before {
+  background-color: var(--grey-3);
+}
+
+.toggler__backend:checked + .toggler__visible .toggler__frontend {
+  background-color: var(--primary);
+  place-items: center right;
+  border-color: var(--primary);
+}
+
+.toggler__backend:checked + .toggler__visible .toggler__frontend:before {
+  background-color: var(--white)
+}
+
+.toggler__backend:focus + .toggler__visible .toggler__label {
+  text-decoration: underline;
+}

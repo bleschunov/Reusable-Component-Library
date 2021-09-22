@@ -1,6 +1,9 @@
 /* Стилизация подвала */
-.footer {
+.footer_white {
   background-color: var(--white);
+}
+
+.footer__info {
   padding: 71px 0 136px;
 }
 
@@ -11,10 +14,24 @@
   margin-bottom: 32px;
 }
 
-.footer__content {
-  width: 640px;
+.footer__text {
+  max-width: 640px;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
   text-align: center;
   margin: auto;
+}
+
+.footer_grey {
+  background-color: var(--grey-5);
+}
+
+.footer__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 56px 0;
 }

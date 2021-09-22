@@ -1,0 +1,50 @@
+/* Стилизация тултипа */
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip__icon {
+  display: inline-block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.tooltip__icon:hover + .tooltip__bubble {
+  display: inline-block;
+}
+
+.tooltip__bubble {
+  display: none;
+
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+
+  border-radius: 10px;
+  background-color: var(--blue-1);
+  color: var(--grey-2);
+  padding: 13px 21px 8px;
+  white-space: nowrap;
+}
+
+.tooltip__bubble::before {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 6px solid var(--blue-1);
+}
+
+.tooltip__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

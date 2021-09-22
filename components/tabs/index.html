@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Страница табов -->
+<html lang="ru">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../../assets/css/main.css" />
+      <title>Tabs</title>
+  </head>
+  <body style="padding: 20px 50px;">
+      <div class="tabs">
+          <input class="tabs__backend" type="radio" id="all" name="tabs" checked/>
+          <input class="tabs__backend" type="radio" id="elements" name="tabs" />
+          <input class="tabs__backend" type="radio" id="containers" name="tabs" />
+          <input class="tabs__backend" type="radio" id="templates" name="tabs" />
+
+          <div class="tabs__scroller">
+            <label class="tabs__label tabs__all" for="all">All components</label>
+            <label class="tabs__label tabs__elements" for="elements">Elements</label>
+            <label class="tabs__label tabs__containers" for="containers">Containers</label>
+            <label class="tabs__label tabs__templates" for="templates">Templates</label>
+          </div>
+
+          <div class="tabs__frame tabs__frame-all">
+            all
+          </div>
+          <div class="tabs__frame tabs__frame-elements">
+            elements
+          </div>
+          <div class="tabs__frame tabs__frame-containers">
+            containers
+          </div>
+          <div class="tabs__frame tabs__frame-templates">
+            templates
+          </div>
+      </div>
+  </body>
+</html>

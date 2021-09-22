@@ -1,0 +1,31 @@
+/* Cтилизация сайдбара */
+.sidebar {
+  background-color: var(--grey-5);
+}
+
+.sidebar__block {
+  padding-bottom: 32px;
+  background-color: inherit;
+}
+
+.sidebar__block:last-child {
+  padding: 0;
+}
+
+.sidebar__title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.sidebar__link {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.sidebar__link:last-child {
+  margin-bottom: 0;
+}

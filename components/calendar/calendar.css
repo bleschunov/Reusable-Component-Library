@@ -1,0 +1,89 @@
+/* Стилизация календаря */
+.calendar {
+  padding: 28px 30px 40px 30px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.calendar__flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__padding-box {
+  position: relative;
+  padding-bottom: 85%;
+}
+
+.calendar__grid-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template: repeat(6, 16.5%) / repeat(7, 14.3%);
+  align-items: center;
+}
+
+.calendar__month {
+  grid-column: 1 / -1;
+  font-weight: 600;
+  color: var(--blue-3);
+  line-height: 24px;
+
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.calendar__day {
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: var(--grey-6);
+  line-height: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.calendar__number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  font-weight: 400;
+  background-color: var(--white);
+  color: var(--blue-3);
+  line-height: 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.calendar__number_selected {
+  background-color: var(--blue-1);
+  color: var(--white);
+}
+
+.calendar__number_selected-between {
+  background-color: var(--blue-4);
+  color: var(--blue-3)
+}
+
+/* @media screen and (min-width: 400px) {
+  .calendar__month {
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .calendar__day {
+    font-size: 5px;
+  }
+
+  .calendar__number {
+    font-size: 7px;
+  }
+} */

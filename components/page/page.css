@@ -1,24 +1,43 @@
 /* Стилизация главной страницы */
+/* MOBILE */
 .main__preview {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
-  padding: 64px 0 204px;
-}
+  display: grid;
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  grid-auto-flow: dense;
 
-.main__card {
-  height: 367px;
-  width: 350px;
-  margin-bottom: 30px;
-}
-
-.main__histogram_preview {
-  margin-bottom: 67px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 24px 0;
 }
 
 .page__box {
-  max-width: 1110px;
-  width: 100%;
-  margin: 0 auto;
+  margin: 0 16px;
+}
+
+/* TABLET */
+@media screen and (min-width: 400px) {
+  .main__preview {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+/* WIDE TABLET */
+@media screen and (min-width: 670px) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1110px) {
+  .main__preview {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 64px 0;
+  }
+
+  .page__box {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,47 @@
+.tabs__backend {
+  opacity: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  outline: none;
+}
+
+.tabs__scroller {
+  display: flex;
+  flex-wrap: wrap; /* на первое время, чтобы избежать горизонтального скролла*/
+  gap: 40px;
+}
+
+.tabs__label {
+  padding: 8px;
+}
+
+.tabs__frame {
+  display: none;
+}
+
+.tabs__backend#all:checked ~ .tabs__frame-all {
+  display: block;
+}
+.tabs__backend#atoms:checked ~ .tabs__frame-atoms {
+  display: block;
+}
+.tabs__backend#molecules:checked ~ .tabs__frame-molecules {
+  display: block;
+}
+.tabs__backend#organisms:checked ~ .tabs__frame-organisms {
+  display: block;
+}
+
+.tabs__all, .tabs__atoms,
+.tabs__molecules, .tabs__organisms {
+  border-bottom: 5px solid transparent;
+}
+
+.tabs__backend#all:checked ~ .page__box .tabs__all,
+.tabs__backend#atoms:checked ~ .page__box .tabs__atoms,
+.tabs__backend#molecules:checked ~ .page__box .tabs__molecules,
+.tabs__backend#organisms:checked ~ .page__box .tabs__organisms {
+  border-color: var(--grey-8);
+}

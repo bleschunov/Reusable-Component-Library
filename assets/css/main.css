@@ -1,11 +1,26 @@
 @import './reset.css';
 @import '../fonts/fonts.css';
 @import '../../components/page/page.css';
+@import '../../components/template/template.css';
 @import '../../components/header/header.css';
 @import '../../components/main_section/main_section.css';
 @import '../../components/footer/footer.css';
+
+@import '../../components/sidebar/sidebar.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/card/card.css';
+@import '../../components/component_preview/component_preview.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/button/button.css';
+@import '../../components/modal/modal.css';
+@import '../../components/accordion/accordion.css';
+@import '../../components/skeleton/skeleton.css';
+@import '../../components/logo/logo.css';
+@import '../../components/tabs/tabs.css';
+
+
 
 :root {
     --white: #ffffff;
@@ -15,12 +30,18 @@
     --purple-2: #5028C6;
     --blue-1: #4263EB;
     --blue-2: #2342C0;
+    --blue-3: #334D6E;
+    --blue-4: #ECEFFD;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #F9FAFC;
+    --grey-6: #90A0B7;
+    --grey-7: rgba(102, 102, 102, 0.5); /* Полупрозрачный */
+    --grey-8: #212429;
+
 
 
     --error: var(--red);
@@ -35,4 +56,11 @@
 * {
     font-family: 'Inter', 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: inherit;
 }

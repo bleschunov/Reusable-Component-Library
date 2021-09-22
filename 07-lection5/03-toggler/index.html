@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Страница с кнопкой переключения -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./toggler.css">
+    </head>
+    <body style="padding: 20px 30px;">
+      <label class="toggler">
+        <input class="toggler__backend" type="checkbox" />
+        <div class="toggler__visible">
+          <div class="toggler__frontend"></div>
+          <span class="toggler__label">Off</span>
+        </div>
+      </label>
+      <label class="toggler">
+        <input class="toggler__backend" type="checkbox" checked/>
+        <div class="toggler__visible">
+          <div class="toggler__frontend"></div>
+          <span class="toggler__label">On</span>
+        </div>
+      </label>
+      <label class="toggler">
+        <input class="toggler__backend" type="checkbox" disabled/>
+        <div class="toggler__visible">
+          <div class="toggler__frontend"></div>
+          <span class="toggler__label">Disabled</span>
+        </div>
+      </label>
+    </body>
+</html>

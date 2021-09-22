@@ -1,6 +1,9 @@
 /* Стилизация основной части страницы */
 .main {
   background-color: var(--grey-5);
+}
+.main_borders {
+  background-color: var(--grey-5);
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
 }

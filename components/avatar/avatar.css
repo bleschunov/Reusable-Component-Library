@@ -1,0 +1,26 @@
+/* Стилизация аватара */
+.avatar {
+  width: 100%;
+}
+
+.avatar__wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+
+  width: 116px;
+  height: 116px;
+}
+
+.avatar__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1110px) {
+  .avatar__wrapper {
+    width: 160px;
+    height: 160px;
+  }
+}

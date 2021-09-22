@@ -1,0 +1,69 @@
+/* Стилизация шаблона страницы элемента */
+.template {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:  "header"
+                        "main"
+                        "footer";
+  height: 100%;
+}
+
+.template__header {
+  grid-area: header;
+}
+
+.template__main {
+  grid-area: main;
+}
+
+.template__view {
+  display: grid;
+
+  grid-template-areas: "preview";
+  grid-template-columns: 1fr;
+
+}
+
+.template__sidebar {
+  display: none;
+}
+
+.template__component-preview {
+  grid-area: preview;
+
+  height: 782px;
+  z-index: 1;
+}
+
+.template__footer {
+  grid-area: footer;
+}
+
+.template__box {
+  margin: 0 16px;
+}
+
+@media screen and (min-width: 670px) {
+  .template__sidebar {
+    display: block;
+    grid-area: sidebar;
+    justify-items: stretch;
+  }
+
+  .template__view {
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    grid-template-areas: "sidebar preview";
+  }
+
+  .template__component-preview {
+    height: 782px;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .template__box {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
